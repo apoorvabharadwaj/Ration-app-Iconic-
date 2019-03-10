@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>add</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+	<form [formGroup]="AddForm">
+		<ion-item>
+			<ion-label position="stacked">Name</ion-label>
+				<ion-input
+					formControlName="name"
+					type="text"
+					placeholder="Enter the name"
+				>
+				</ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label position="stacked">Age</ion-label>
+			<ion-input
+				formControlName="age"
+				type="numeric"
+				placeholder="Enter Age of person"
+			>
+			</ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label position="stacked">Aadhar No.</ion-label>
+			<ion-input
+				formControlName="aadhar"
+				type="numeric"
+				placeholder="Enter the Aadhar No."
+			>
+			</ion-input>
+		</ion-item>
+		
+		<ion-item>
+			<ion-label position="stacked">Bank Account No.</ion-label>
+			<ion-input
+				formControlName="account"
+				type="numeric"
+				placeholder="Enter Bank Account No."
+			>
+			</ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-label position="stacked">Income</ion-label>
+			<ion-input
+				formControlName="income"
+				type="numeric"
+				placeholder="Enter Income"
+			>
+			</ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label position="stacked">Relation</ion-label>
+			<ion-input
+				formControlName="relation"
+				type="text"
+				placeholder="Enter relation to the head"
+			>
+			</ion-input>
+		</ion-item>
+
+	<ion-button (click)="updateadd(AddForm)" expand="block" >
+      	Submit
+    </ion-button>
+ </form>
+
+</ion-content>

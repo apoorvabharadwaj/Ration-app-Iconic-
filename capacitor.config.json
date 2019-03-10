@@ -1,0 +1,6 @@
+{
+  "appId": "com.bhargav.rationApp",
+  "appName": "FirstApp",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}

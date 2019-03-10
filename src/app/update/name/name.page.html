@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>name</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+	<form [formGroup]="UpdateForm">
+		<ion-item>
+			<ion-label position="stacked">Existing name</ion-label>
+				<ion-input
+					formControlName="oldname"
+					type="text"
+					placeholder="Enter the name on card"
+				>
+				</ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label position="stacked">New Name</ion-label>
+			<ion-input
+				formControlName="newname"
+				type="text"
+				placeholder="Enter name on Any Govt ID"
+			>
+			</ion-input>
+		</ion-item>
+	<ion-button (click)="updatename(UpdateForm)" expand="block" >
+      	Submit
+    </ion-button>
+ </form>
+
+</ion-content>

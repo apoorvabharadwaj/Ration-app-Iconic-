@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>order</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-item>
+  <ion-label>Select Rice Quantity in Kg</ion-label>
+   <ion-select [(ngModel)]="Rice" (ionChange)="onChangerice($event)">
+    <ion-select-option value="1">1</ion-select-option>
+    <ion-select-option value="2">2</ion-select-option>
+    <ion-select-option value="3">3</ion-select-option>
+    <ion-select-option value="4">4</ion-select-option>
+  </ion-select>
+</ion-item>
+<ion-item>
+  <ion-label>Select Ragi Quantity in Kg</ion-label>
+   <ion-select [(ngModel)]="Ragi" (ionChange)="onChangeragi($event)">
+    <ion-select-option value="1">1</ion-select-option>
+    <ion-select-option value="2">2</ion-select-option>
+    <ion-select-option value="3">3</ion-select-option>
+    <ion-select-option value="4">4</ion-select-option>
+  </ion-select>
+</ion-item>
+
+<ion-item>
+  <ion-label>Select Wheat Quantity in Kg </ion-label>
+   <ion-select [(ngModel)]="Wheat" (ionChange)="onChangewheat($event)">
+    <ion-select-option value="1">1</ion-select-option>
+    <ion-select-option value="2">2</ion-select-option>
+    <ion-select-option value="3">3</ion-select-option>
+    <ion-select-option value="4">4</ion-select-option>
+  </ion-select>
+</ion-item>
+<ion-item>
+  <ion-label>Select Salt Quantity in Kg</ion-label>
+   <ion-select [(ngModel)]="Salt" (ionChange)="onChangesalt($event)">
+    <ion-select-option value="1">1</ion-select-option>
+    <ion-select-option value="2">2</ion-select-option>
+    <ion-select-option value="3">3</ion-select-option>
+    <ion-select-option value="4">4</ion-select-option>
+  </ion-select>
+</ion-item>
+<ion-item>
+  <ion-label>Select Sugar Quantity in Kg</ion-label>
+   <ion-select [(ngModel)]="Sugar" (ionChange)="onChangesugar($event)">
+    <ion-select-option value="1">1</ion-select-option>
+    <ion-select-option value="2">2</ion-select-option>
+    <ion-select-option value="3">3</ion-select-option>
+    <ion-select-option value="4">4</ion-select-option>
+  </ion-select>
+</ion-item>
+
+
+<ion-button (click) = "getorder()">
+      Submit
+</ion-button>
+
+</ion-content>
